@@ -13,7 +13,6 @@ namespace Singleton.DesignPatterns.Concrete
         /// </summary>
         private static object _lockConnectionObject = new object();
 
-
         /// <summary>
         /// this property live forever.
         /// </summary>
@@ -22,11 +21,7 @@ namespace Singleton.DesignPatterns.Concrete
         /// <summary>
         /// we prevent create instance from other place with private constructor.
         /// </summary>
-        private RedisManager()
-        {
-
-        }
-
+        private RedisManager(){}
 
         /// <summary>
         /// we can handle connection object with getter scope and we should lock this object because parallel programming can break your code.
